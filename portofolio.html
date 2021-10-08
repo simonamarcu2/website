@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="/style-main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projects</title>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    var slideIndex = 0;
+  showSlides();
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+</head>
+<body>
+
+<span onclick="openNav()">&#9776; Menu</span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About me</a>
+  <a href="portofolio.html">Portofolio</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1>PORTFOLIO</h1>
+<div class="section-title">
+  <h2>{ from a dream to a wonderful reality }</h2>
+</div>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="images/canvas1.jpg" style="width:100%">
+    <div class="text">Perfect family</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="images/canvas3.jpg" style="width:100%">
+    <div class="text">Family portrait</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="images/canvas4.jpg" style="width:100%">
+    <div class="text">Wild Horse</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="images/canvas5.jpg" style="width:100%">
+    <div class="text">Angel Whings</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="images/canvas6.jpg"style="width:100%">
+    <div class="text">Mother and Baby</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="images/canvas7.jpg" style="width:100%">
+    <div class="text">Lion</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="images/canvas8.jpg" style="width:100%">
+    <div class="text">Sea and Sand</div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <div class="section-title">
+    <h2>{ here is my recent work }</h2>
+  </div>
+
+  <div class="portofolio">
+    <img src="images/canvas1.jpg" width="100%">
+    <img src="images/canvas3.jpg" width="100%">
+    <img src="images/canvas4.jpg" width="100%">
+    <img src="images/canvas5.jpg" width="100%">
+    <img src="images/canvas6.jpg" width="100%">
+    <img src="images/canvas7.jpg" width="100%">
+    <img src="images/canvas8.jpg" width="100%">
+    <img src="images/bouquet.jpg" width="100%">
+    <img src="images/bouquet2.jpg" width="100%">
+    <img src="images/bouquet3.jpg" width="100%">
+    <img src="images/cake.jpg" width="100%">
+    <img src="images/cake1.jpg" width="100%">
+    <img src="images/cake2.jpg" width="100%">
+    <img src="images/cake4.jpg" width="100%">
+    <img src="images/cake5.jpg" width="100%">
+    <img src="images/cake6.jpg" width="100%">
+    <img src="images/glass1.jpg" width="100%">
+    <img src="images/glass2.jpg" width="100%">
+    <img src="images/glass3.jpeg" width="100%">
+    <img src="images/glass4.jpg" width="100%">
+    <img src="images/t1.jpg" width="100%">
+    <img src="images/t2.jpg" width="100%">
+    <img src="images/t3.jpg" width="100%">
+    <img src="images/t4.jpg" width="100%">
+  </div>
+
+
+
+
+</body>
+</html>

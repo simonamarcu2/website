@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style-main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supersimy's Creations</title>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000);
+    }
+    </script>
+  
+</head>
+<header style="position: sticky; top: 0; width: 100%;">
+</header>
+<body>
+<span onclick="openNav()">&#9776; Menu</span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About me</a>
+  <a href="portofolio.html">Portofolio</a>
+  <a href="contact.html">Contact</a>
+</div>  
+<div class="logo-style">
+  <img class="logo-style" src ="images/simona_sigla.png" alt="Logo Company">
+</div>
+
+<div class="logo-wrap">
+  <!-- <img
+    class="logo"
+    src="/images/white-lion.jpg"
+    alt="Lion Company Logo"> -->
+  <div id="main">
+    <h1>~Supersimy's Creations~</h1>
+      <div class="intro">
+        <h3>{ from a dream to a wonderful reality }</h3>
+          <p class="content">
+            Quality products created with love and passion, 100% hand made.
+            I create colorful pieces of original art and turn into canvases, which are framed and ready to be hung. The pieces in each collection can be mixed and matched to suit any home and fill any wall, big or small, on a budget. 
+          </p>
+          <p class="content2">
+            I invite you to browse through the menu and see some of my artwork.
+          </p>
+      </div>
+  </div>
+  <c>
+</div>
+</body>
+
+</html>
